@@ -76,7 +76,7 @@ let loadDictionary = (file, callback) => {
     })
 };
 
-downloadDictionary('', 'dictionary.json', (err) => {
+downloadDictionary('https://raw.githubusercontent.com/HADJIBAEV/Dictionary-server/main/dictionary.json', 'dictionary.json', (err) => {
     if (err) {
         console.log(err);
         return;
